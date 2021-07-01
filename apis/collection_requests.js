@@ -11,7 +11,7 @@ collection_requests.create = function(phone_number, amount, currency, metadata =
 
     var options = {
         method: 'POST',
-        url: 'https://app.beyonic.com/api/collectionrequests',
+        url: 'https://api.beyonic.com/api/collectionrequests',
         headers: {
             'Content-Type': 'application/json',
             'Authorization': auth
@@ -45,7 +45,7 @@ collection_requests.get = function(id){
 
     var options = {
         method: 'GET',
-        url: 'https://app.beyonic.com/api/collectionsrequests' + id,
+        url: 'https://api.beyonic.com/api/collectionsrequests' + id,
         headers: {
             'Content-Type': 'application/json',
             'Authorization': auth
@@ -72,7 +72,7 @@ collection_requests.list = function () {
 
     var options = {
         method: 'GET',
-        url: 'https://app.beyonic.com/api/collectionrequests',
+        url: 'https://api.beyonic.com/api/collectionrequests',
         headers: {
             'Content-Type': 'application/json',
             'Authorization': auth

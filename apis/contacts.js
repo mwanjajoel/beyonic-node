@@ -11,7 +11,7 @@ contacts.create = function(first_name, last_name, phone_number, email = null, me
 
     var options = {
         method: 'POST',
-        url: 'https://app.beyonic.com/api/contacts',
+        url: 'https://api.beyonic.com/api/contacts',
         headers: {
             'Content-Type': 'application/json',
             'Authorization': auth
@@ -45,7 +45,7 @@ contacts.get = function(id){
 
     var options = {
         method: 'GET',
-        url: 'https://app.beyonic.com/api/contacts' + id,
+        url: 'https://api.beyonic.com/api/contacts' + id,
         headers: {
             'Content-Type': 'application/json',
             'Authorization': auth
@@ -72,7 +72,7 @@ contacts.list = function () {
 
     var options = {
         method: 'GET',
-        url: 'https://app.beyonic.com/api/contacts',
+        url: 'https://api.beyonic.com/api/contacts',
         headers: {
             'Content-Type': 'application/json',
             'Authorization': auth

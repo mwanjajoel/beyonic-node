@@ -12,7 +12,7 @@ accounts.get = function(id){
 
     var options = {
         method: 'GET',
-        url: 'https://app.beyonic.com/api/accounts/' + id,
+        url: 'https://api.beyonic.com/api/accounts/' + id,
         headers: {
             'Content-Type': 'application/json',
             'Authorization': auth
@@ -45,7 +45,7 @@ accounts.list = function () {
 
     var options = {
         method: 'GET',
-        url: 'https://app.beyonic.com/api/accounts',
+        url: 'https://api.beyonic.com/api/accounts',
         headers: {
             'Content-Type': 'application/json',
             'Authorization': auth

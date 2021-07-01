@@ -11,7 +11,7 @@ collections.create = function(phoneNumber, amount, currency, account, first_name
 
     var options = {
         method: 'POST',
-        url: 'https://app.beyonic.com/api/payments/' + id,
+        url: 'https://api.beyonic.com/api/payments/' + id,
         headers: {
             'Content-Type': 'application/json',
             'Authorization': auth
@@ -49,7 +49,7 @@ collections.get = function(id){
 
     var options = {
         method: 'GET',
-        url: 'https://app.beyonic.com/api/payments/' + id,
+        url: 'https://api.beyonic.com/api/payments/' + id,
         headers: {
             'Content-Type': 'application/json',
             'Authorization': auth
@@ -76,7 +76,7 @@ collections.list = function () {
 
     var options = {
         method: 'GET',
-        url: 'https://app.beyonic.com/api/payments',
+        url: 'https://api.beyonic.com/api/payments',
         headers: {
             'Content-Type': 'application/json',
             'Authorization': auth
